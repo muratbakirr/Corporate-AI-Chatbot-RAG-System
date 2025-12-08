@@ -10,3 +10,7 @@ it retrieves and attaches source citations to the final document.
 3. **Human Feedback:** If issues are detected, provide corrective feedback.
 4. **Finalize Document:** Produce the revised document.
 5. **Add Citations:** Append source citations to the document.
+
+
+
+<img width="1474" height="647" alt="Image" src="https://github.com/user-attachments/assets/19102b1b-dc19-45c0-aed9-f5d93dfe8ce0" />
