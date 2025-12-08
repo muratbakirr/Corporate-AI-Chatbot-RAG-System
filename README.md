@@ -1,15 +1,14 @@
-# 📄 CorpDocs with Citations
+I built a corporate documentation chatbot that leverages LangChain for LLM interactions and LangGraph for state management and workflow orchestration. LangGraph complements the implementation in several critical ways:
 
-CorpDocs is your corporate documentation assistant. This tool generates detailed project documentation,
-verifies compliance with corporate standards, and integrates human feedback when necessary. Finally,
-it retrieves and attaches source citations to the final document.
+* Explicit state management: Unlike basic RAG pipelines that operate as linear sequences, LangGraph maintains a formal state object containing all relevant information (queries, retrieved documents, intermediate results, etc.).
+  
+* Conditional processing: LangGraph enables conditional branching based on the quality of retrieved documents or other evaluation criteria—essential for ensuring reliable output.
 
-**Workflow:**
-1. **Generate Documentation:** Create an initial draft.
-2. **Compliance Check:** Automatically review for adherence to corporate guidelines.
-3. **Human Feedback:** If issues are detected, provide corrective feedback.
-4. **Finalize Document:** Produce the revised document.
-5. **Add Citations:** Append source citations to the document.
+* Multi-step reasoning: For complex documentation tasks, LangGraph allows breaking the process into discrete steps (retrieval, generation, validation, refinement) while maintaining context throughout.
+
+* Human-in-the-loop integration: When document quality or compliance cannot be automatically verified, LangGraph facilitates seamless integration of human feedback.
+
+With the Corporate Documentation Manager tool we built, you can generate, validate, and refine project documentation while incorporating human feedback to ensure compliance with corporate standards
 
 
 
